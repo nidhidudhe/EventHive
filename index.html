@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHive | Full Management Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Sidebar with exact table names -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>EventHive 🎉</h2>
+            </div>
+            <ul class="nav-links">
+                <li onclick="switchSection('event')"><i class="fas fa-calendar"></i> Events</li>
+                <li onclick="switchSection('User')"><i class="fas fa-users"></i> Users</li>
+                <li onclick="switchSection('booking')"><i class="fas fa-file-invoice-dollar"></i> Bookings</li>
+                <li onclick="switchSection('ticket')"><i class="fas fa-ticket-alt"></i> Tickets</li>
+                <li onclick="switchSection('payment')"><i class="fas fa-credit-card"></i> Payments</li>
+                <hr style="opacity: 0.1; margin: 0.5rem 0">
+                <li onclick="switchSection('venue')"><i class="fas fa-hotel"></i> Venues</li>
+                <li onclick="switchSection('category')"><i class="fas fa-tags"></i> Categories</li>
+                <li onclick="switchSection('organizer')"><i class="fas fa-user-tie"></i> Organizers</li>
+                <li onclick="switchSection('sponsor')"><i class="fas fa-handshake"></i> Sponsors</li>
+                <li onclick="switchSection('event_sponsor')"><i class="fas fa-link"></i> Event Sponsors</li>
+                <hr style="opacity: 0.1; margin: 0.5rem 0">
+                <li onclick="switchSection('vendor')"><i class="fas fa-truck-loading"></i> Vendors</li>
+                <li onclick="switchSection('staff')"><i class="fas fa-user-shield"></i> Staff</li>
+                <li onclick="switchSection('schedule')"><i class="fas fa-clock"></i> Schedules</li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header class="content-header">
+                <div>
+                    <h1 id="section-title">All Events</h1>
+                    <p id="section-desc">Manage your existing PostgreSQL database</p>
+                </div>
+                <div id="header-actions">
+                    <button id="add-btn" class="btn btn-primary" onclick="openUniModal()">➕ Add Record</button>
+                </div>
+            </header>
+
+            <section id="events-grid" class="grid"></section>
+
+            <section id="table-view" style="display: none;">
+                <div class="card" style="padding: 0; overflow-x: auto;">
+                    <table class="data-table">
+                        <thead id="table-head"></thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Universal Add Modal -->
+    <div id="uniModal" class="booking-modal">
+        <div class="modal-content" style="width: 500px">
+            <h2 id="modal-title">Register New Entry</h2>
+            <form id="uniForm" style="margin-top: 1.5rem">
+                <div id="form-fields"></div>
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button type="submit" class="btn btn-primary" style="flex: 1">💾 Save Record</button>
+                    <button type="button" class="btn btn-danger" onclick="closeUniModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
