@@ -1,15 +1,15 @@
-# EventHive 🎉 | Event Management System
+# EventHive | Event Management System
 
 We developed **EventHive** as a comprehensive solution for managing complex event data. This project showcases our ability to build a full-stack application using a modern tech stack and a database-intelligent architecture.
 
-## 🚀 Key Features We Implemented
+## Key Features We Implemented
 - **Universal Management Dashboard**: We built a central hub that allows management of all 13 database entities (Events, Users, Bookings, etc.) from a single interface.
 - **Dynamic Contextual Forms**: We designed the UI to be context-aware; the application automatically generates the correct data entry fields based on which database table is currently active.
 - **Manual Data Control**: We implemented support for manual primary key entries (e.g., specific IDs like 701, 702), giving users full control over data relationships.
 - **Premium User Experience**: We focused on aesthetics, using CSS Grid, Flexbox, and Glassmorphism to create a professional dark-mode dashboard.
 - **Intelligent Backend**: We developed an Express engine that dynamically detects database schemas and handles naming constraints (like case sensitivity) automatically.
 
-## 🏁 Getting Started
+## Getting Started
 
 ### 1. Database Configuration
 1. We created a PostgreSQL database named `EventHive`.
@@ -27,7 +27,7 @@ node server.js
 
 ---
 
-## 📚 Technical Breakdown & Development Notes
+## Technical Breakdown & Development Notes
 
 ### 1. Our Technology Stack
 - **Frontend**: We chose to use **Vanilla HTML5, CSS3, and JavaScript** to demonstrate core web development skills without external frameworks like React.
