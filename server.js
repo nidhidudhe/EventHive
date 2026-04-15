@@ -76,6 +76,7 @@ app.delete('/:table/:id', async (req, res) => {
     } catch (err) { res.status(500).json({ error: err.message }); }
 });
 
+<<<<<<< HEAD
 app.put('/:table/:id', async (req, res) => {
     const tableName = req.params.table;
     const id = req.params.id;
@@ -110,6 +111,8 @@ app.put('/:table/:id', async (req, res) => {
     }
 });
 
+=======
+>>>>>>> 550ff04eb415eb483c0682358a24f825ed249448
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
 const PORT = 5000;
