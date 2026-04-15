@@ -123,12 +123,9 @@ body {
 .btn-primary { background: var(--primary); color: white; }
 .btn-primary:hover { background: var(--primary-hover); transform: translateY(-2px); }
 
-<<<<<<< HEAD
 .btn-edit{ background: rgba(151, 68, 239, 0.1); color: var(--accent); }
 .btn-edit:hover { background: var(--accent); color: var(--text-main); }
 
-=======
->>>>>>> 550ff04eb415eb483c0682358a24f825ed249448
 .btn-danger { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
 .btn-danger:hover { background: var(--danger); color: white; }
 
