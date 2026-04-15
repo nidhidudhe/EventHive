@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # EventHive 🎉 | Event Management System
 =======
 # EventHive | Event Management System
->>>>>>> 550ff04eb415eb483c0682358a24f825ed249448
 
 We developed **EventHive** as a comprehensive solution for managing complex event data. This project showcases our ability to build a full-stack application using a modern tech stack and a database-intelligent architecture.
 
